@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Math Page</title>
+</head>
+<body>
+  <h1>Math Addition</h1>
+  <form id="mathForm">
+    <input type="number" id="x" placeholder="Enter x" required />
+    <input type="number" id="y" placeholder="Enter y" required />
+    <input type="text" id="result" placeholder="Result" disabled />
+    <button type="submit">Calculate</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('mathForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const x = document.getElementById('x').value;
+      const y = document.getElementById('y').value;
+
+      const res = await fetch('/math', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ x, y })
+      });
+
+      const data = await res.json();
+      document.getElementById('result').value = data.result;
+    });
+  </script>
+</body>
+</html>

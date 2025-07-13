@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",              // Output modern JS
+    "module": "CommonJS",            // Node.js uses CommonJS
+    "outDir": "./dist",              // Compiled .js files go here
+    "rootDir": "./",                 // Your .ts files are in this folder
+    "strict": true,                  // Good practice: type safety
+    "esModuleInterop": true,         // Allow 'import express from "express"' style
+    "sourceMap": true                // 💡 Required for debugging
+  },
+  "include": ["./*.ts"]
+}

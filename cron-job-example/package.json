@@ -1,0 +1,18 @@
+{
+  "name": "cron-job-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/node-cron": "^3.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}

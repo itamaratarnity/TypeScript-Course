@@ -1,0 +1,4 @@
+[2025-06-13 20:50:17] INFO: [Server] Listening on http://localhost:3000
+[2025-06-13 20:50:37] INFO: [Server] Listening on http://localhost:3000
+[2025-06-13 20:51:03] INFO: [GET /] Homepage accessed
+[2025-06-13 20:51:55] ERROR: [GET /error] ENOENT: no such file or directory, open 'C:\Projects\Amal\Courses\TypeScript\logger-file-example-winston\non-existent-file.txt'
